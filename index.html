@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goa - Paradise of India</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h2 class="logo">Goa</h2>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#beaches">Beaches</a>
+                <a href="#culture">Culture</a>
+                <a href="#food">Food</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Goa</h1>
+            <p>Sun, Sand, and Serenity</p>
+            <button class="cta-btn">Explore Now</button>
+        </div>
+    </section>
+
+    <!-- Beaches Section -->
+    <section id="beaches" class="section beaches">
+        <div class="container">
+            <h2>Beautiful Beaches</h2>
+            <div class="beach-grid">
+                <div class="beach-card">
+                    <img src="https://picsum.photos/400/300?random=1" alt="North Goa Beach">
+                    <h3>North Goa</h3>
+                    <p>Vibrant beaches with lively shacks and water sports.</p>
+                </div>
+                <div class="beach-card">
+                    <img src="https://picsum.photos/400/300?random=2" alt="South Goa Beach">
+                    <h3>South Goa</h3>
+                    <p>Peaceful and pristine beaches for relaxation.</p>
+                </div>
+                <div class="beach-card">
+                    <img src="https://picsum.photos/400/300?random=3" alt="Goa Sunset">
+                    <h3>Sunset Views</h3>
+                    <p>Beautiful sunsets over the Arabian Sea.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Culture Section -->
+    <section id="culture" class="section culture">
+        <div class="container">
+            <h2>Rich Culture</h2>
+            <div class="culture-content">
+                <div class="culture-text">
+                    <h3>Portuguese Heritage</h3>
+                    <p>Goa's unique blend of Indian and Portuguese culture creates a special atmosphere.</p>
+                    <ul>
+                        <li>Historic Churches</li>
+                        <li>Colorful Architecture</li>
+                        <li>Vibrant Festivals</li>
+                        <li>Traditional Music</li>
+                    </ul>
+                </div>
+                <div class="culture-image">
+                    <img src="https://picsum.photos/500/400?random=4" alt="Goa Architecture">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Food Section -->
+    <section id="food" class="section food">
+        <div class="container">
+            <h2>Goan Food</h2>
+            <div class="food-grid">
+                <div class="food-item">
+                    <img src="https://picsum.photos/300/200?random=5" alt="Goan Food">
+                    <h4>Fish Curry</h4>
+                </div>
+                <div class="food-item">
+                    <img src="https://picsum.photos/300/200?random=6" alt="Seafood">
+                    <h4>Seafood</h4>
+                </div>
+                <div class="food-item">
+                    <img src="https://picsum.photos/300/200?random=7" alt="Local Food">
+                    <h4>Local Dishes</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Discover Goa. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Simple form-like interaction
+        document.querySelector('.cta-btn').addEventListener('click', function() {
+            alert('Welcome to Goa! Start planning your trip today.');
+        });
+    </script>
+</body>
+</html>
