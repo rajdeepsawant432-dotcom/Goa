@@ -5,17 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Goa - Paradise of India</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <h2 class="logo">Goa</h2>
+            <div class="logo">Goa</div>
             <div class="nav-links">
                 <a href="#home">Home</a>
                 <a href="#beaches">Beaches</a>
                 <a href="#culture">Culture</a>
                 <a href="#food">Food</a>
+                <a href="#contact">Contact</a>
             </div>
         </div>
     </nav>
@@ -24,73 +26,126 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>Welcome to Goa</h1>
-            <p>Sun, Sand, and Serenity</p>
-            <button class="cta-btn">Explore Now</button>
+            <p>Where the sun meets the sea, and every moment becomes a memory</p>
+            <button class="cta-btn">Explore Paradise</button>
         </div>
     </section>
 
     <!-- Beaches Section -->
-    <section id="beaches" class="section beaches">
+    <section id="beaches" class="section beaches-section">
         <div class="container">
-            <h2>Beautiful Beaches</h2>
-            <div class="beach-grid">
+            <h2 class="section-title">Beautiful Beaches of Goa</h2>
+            <div class="beaches-grid">
                 <div class="beach-card">
-                    <img src="https://picsum.photos/400/300?random=1" alt="North Goa Beach">
-                    <h3>North Goa</h3>
-                    <p>Vibrant beaches with lively shacks and water sports.</p>
+                    <img src="images/calangute-beach.jpg" alt="Calangute Beach" class="beach-img">
+                    <div class="beach-info">
+                        <h3>Calangute Beach</h3>
+                        <p>Known as the "Queen of Beaches," this is Goa's largest and most popular beach with golden sands and vibrant atmosphere.</p>
+                    </div>
                 </div>
+                
                 <div class="beach-card">
-                    <img src="https://picsum.photos/400/300?random=2" alt="South Goa Beach">
-                    <h3>South Goa</h3>
-                    <p>Peaceful and pristine beaches for relaxation.</p>
+                    <img src="images/palolem-beach.jpg" alt="Palolem Beach" class="beach-img">
+                    <div class="beach-info">
+                        <h3>Palolem Beach</h3>
+                        <p>A serene crescent-shaped beach in South Goa, perfect for swimming and dolphin watching.</p>
+                    </div>
                 </div>
+                
                 <div class="beach-card">
-                    <img src="https://picsum.photos/400/300?random=3" alt="Goa Sunset">
-                    <h3>Sunset Views</h3>
-                    <p>Beautiful sunsets over the Arabian Sea.</p>
+                    <img src="images/vagator-beach.jpg" alt="Vagator Beach" class="beach-img">
+                    <div class="beach-info">
+                        <h3>Vagator Beach</h3>
+                        <p>Famous for its red cliffs, rocky outcrops, and stunning sunset views over the Arabian Sea.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Culture Section -->
-    <section id="culture" class="section culture">
+    <section id="culture" class="section culture-section">
         <div class="container">
-            <h2>Rich Culture</h2>
+            <h2 class="section-title">Rich Culture & Heritage</h2>
             <div class="culture-content">
                 <div class="culture-text">
-                    <h3>Portuguese Heritage</h3>
-                    <p>Goa's unique blend of Indian and Portuguese culture creates a special atmosphere.</p>
-                    <ul>
-                        <li>Historic Churches</li>
-                        <li>Colorful Architecture</li>
-                        <li>Vibrant Festivals</li>
-                        <li>Traditional Music</li>
-                    </ul>
+                    <h3>Portuguese Legacy</h3>
+                    <p>Goa's unique identity comes from 450 years of Portuguese rule, blending Indian traditions with European architecture.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <h4>🏛️ Historic Churches</h4>
+                            <p>Basilica of Bom Jesus, Sé Cathedral</p>
+                        </div>
+                        <div class="feature">
+                            <h4>🎨 Colorful Architecture</h4>
+                            <p>Portuguese-style houses in Fontainhas</p>
+                        </div>
+                        <div class="feature">
+                            <h4>🎭 Vibrant Festivals</h4>
+                            <p>Carnival, Christmas, Shigmo</p>
+                        </div>
+                        <div class="feature">
+                            <h4>🎵 Traditional Music</h4>
+                            <p>Fado, Dekhnni, Mando</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="culture-image">
-                    <img src="https://picsum.photos/500/400?random=4" alt="Goa Architecture">
+                    <img src="images/goa-architecture.jpg" alt="Goa Architecture" class="culture-img">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Food Section -->
-    <section id="food" class="section food">
+    <section id="food" class="section food-section">
         <div class="container">
-            <h2>Goan Food</h2>
+            <h2 class="section-title">Delicious Goan Cuisine</h2>
             <div class="food-grid">
-                <div class="food-item">
-                    <img src="https://picsum.photos/300/200?random=5" alt="Goan Food">
-                    <h4>Fish Curry</h4>
+                <div class="food-card">
+                    <img src="images/fish-curry.jpg" alt="Fish Curry Rice" class="food-img">
+                    <h3>Fish Curry Rice</h3>
+                    <p>Traditional Goan staple with coconut-based curry and fresh fish</p>
                 </div>
-                <div class="food-item">
-                    <img src="https://picsum.photos/300/200?random=6" alt="Seafood">
-                    <h4>Seafood</h4>
+                
+                <div class="food-card">
+                    <img src="images/seafood-platter.jpg" alt="Seafood Platter" class="food-img">
+                    <h3>Seafood Platter</h3>
+                    <p>Fresh prawns, crabs, and fish prepared with local spices</p>
                 </div>
-                <div class="food-item">
-                    <img src="https://picsum.photos/300/200?random=7" alt="Local Food">
-                    <h4>Local Dishes</h4>
+                
+                <div class="food-card">
+                    <img src="images/goan-sausages.jpg" alt="Goan Sausages" class="food-img">
+                    <h3>Goan Sausages</h3>
+                    <p>Spicy pork sausages with unique Goan flavors and spices</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Plan Your Goan Adventure</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Best Time to Visit</h3>
+                    <p>November to March - Perfect weather with pleasant temperatures</p>
+                    
+                    <h3>How to Reach</h3>
+                    <p>Dabolim Airport (GOI) & Madgaon Railway Station are well connected</p>
+                    
+                    <h3>Stay Options</h3>
+                    <p>Beach resorts, heritage homes, budget hotels, and hostels</p>
+                </div>
+                
+                <div class="newsletter">
+                    <h3>Get Travel Updates</h3>
+                    <form class="newsletter-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -100,6 +155,7 @@
     <footer class="footer">
         <div class="container">
             <p>&copy; 2024 Discover Goa. All rights reserved.</p>
+            <p>Experience the magic of India's sunshine state</p>
         </div>
     </footer>
 
@@ -118,9 +174,18 @@
             });
         });
 
-        // Simple form-like interaction
+        // Newsletter form
+        document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for subscribing! We will send you amazing Goan travel tips.');
+            this.reset();
+        });
+
+        // CTA button
         document.querySelector('.cta-btn').addEventListener('click', function() {
-            alert('Welcome to Goa! Start planning your trip today.');
+            document.querySelector('#beaches').scrollIntoView({
+                behavior: 'smooth'
+            });
         });
     </script>
 </body>
